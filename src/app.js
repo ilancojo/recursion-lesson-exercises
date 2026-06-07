@@ -4,7 +4,6 @@
 */
 
 
-
 const findFactorial = function(num ,sum = 1) {
 
     sum = num * sum ;
@@ -17,11 +16,18 @@ const findFactorial = function(num ,sum = 1) {
 console.log(findFactorial(5));
 
 
-//Exercise 2
-const reverseString = function() {
-  //Your code here
+//Exercise 2 -  bibi -> ibib
+const reverseString = function( str ) {
 
+  if(str === "" ){return ""}
+
+  return    str.slice(-1) + reverseString( str.slice(0,-1))  ;
+  
 }
+console.log(reverseString("bibi"));
+
+
+
 
 //Exercise 3
 const arr1 = [1, 2, 3]
