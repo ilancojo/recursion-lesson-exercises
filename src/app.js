@@ -3,11 +3,19 @@
   Please note: You must also add the correct arguments to the methods
 */
 
-//Exercise 1
-const findFactorial = function() {
-  //Your code here
 
+
+const findFactorial = function(num ,sum = 1) {
+
+    sum = num * sum ;
+
+    if(num === 1){
+      return sum
+    }
+    return findFactorial( num -1 ,sum);
 }
+console.log(findFactorial(5));
+
 
 //Exercise 2
 const reverseString = function() {
